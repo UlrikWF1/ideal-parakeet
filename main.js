@@ -24,8 +24,8 @@ var gameData = {
   lastTick: Date.now()
 }
 
-var upgrades {
-  reinforced
+var upgrades = {
+  reinforced: 2
 }
 
 function update(id, content) {
@@ -97,9 +97,9 @@ function buyMine2(mine2, mine2Cost, mine2GoldPerSec) {
   gameData.mine2GoldPerSec += 8;
 }
 
-var mineLoop = window.setInterval(function() {
+/*var mineLoop = window.setInterval(function() {
   if gameData.cursor >= 1 {
-    gamedate.gold += gameData.cursorGoldPerSec
+    gameData.gold += gameData.cursorGoldPerSec
   }
   if gameData.mine1 >= 1 {
     gameData.gold += gameData.mine1GoldPerSec
@@ -107,4 +107,4 @@ var mineLoop = window.setInterval(function() {
   if gameData.mine2 >= 1 {
     gameData.gold += gameData.mine2GoldPerSec
   }
-}, 1000)
+}, 1000)*/
