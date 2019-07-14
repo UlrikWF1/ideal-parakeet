@@ -1,2 +1,2 @@
 # ideal-parakeet
-Idle Games
+Incremental Game
