@@ -83,18 +83,18 @@ tab("mineGoldMenu")
 
 function buyCursor(cursor, cursorCost) {
   gameData.cursor += 1;
-  gameData.cursorCost *= 1.12
-  gameData.cursorGoldPerSec
+  gameData.cursorCost *= 1.12;
+  gameData.cursorGoldPerSec += 0.1;
 }
 function buyMine1(mine1, mine1Cost) {
   gameData.mine1 += 1;
   gameData.mine1Cost *= 1.15;
-  gameData.mine1GoldPerSec
+  gameData.mine1GoldPerSec += 1;
 }
 function buyMine2(mine2, mine2Cost, mine2GoldPerSec) {
   gameData.mine2 += 1;
-  gameData.mine2Cost *=
-  gameData.mine2GoldPerSec
+  gameData.mine2Cost *= 1.15;
+  gameData.mine2GoldPerSec += 8;
 }
 
 var mineLoop = window.setInterval(function() {
